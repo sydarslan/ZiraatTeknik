@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F120836A-4085-44EE-8941-CEB711576118}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZiraatTeknik</RootNamespace>
+    <AssemblyName>ZiraatTeknik</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Altkategoriekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Altkategoriekle.Designer.cs">
+      <DependentUpon>Admin_Altkategoriekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Bildirim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Bildirim.Designer.cs">
+      <DependentUpon>Admin_Bildirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHesap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHesap.Designer.cs">
+      <DependentUpon>AdminHesap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Kupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Kupon.Designer.cs">
+      <DependentUpon>Admin_Kupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Kategoriekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Kategoriekleme.Designer.cs">
+      <DependentUpon>Admin_Kategoriekleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Markaekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Markaekle.Designer.cs">
+      <DependentUpon>Admin_Markaekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deneme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deneme.Designer.cs">
+      <DependentUpon>deneme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUyeGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUyeGirisi.Designer.cs">
+      <DependentUpon>FormUyeGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUyeOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUyeOl.Designer.cs">
+      <DependentUpon>FormUyeOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuHakkimizda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuHakkimizda.Designer.cs">
+      <DependentUpon>MenuHakkimizda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuIetisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuIetisim.Designer.cs">
+      <DependentUpon>MenuIetisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuProjeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuProjeler.Designer.cs">
+      <DependentUpon>MenuProjeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Admin_Kampanyalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Kampanyalar.Designer.cs">
+      <DependentUpon>Admin_Kampanyalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin_Siparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Siparisler.Designer.cs">
+      <DependentUpon>Admin_Siparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_StokBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_StokBilgileri.Designer.cs">
+      <DependentUpon>Admin_StokBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UrunIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_UrunIslemleri.Designer.cs">
+      <DependentUpon>Admin_UrunIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UyeListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_UyeListesi.Designer.cs">
+      <DependentUpon>Admin_UyeListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunDetaylari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunDetaylari.Designer.cs">
+      <DependentUpon>UrunDetaylari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yardimci.cs" />
+    <Compile Include="ZiraatDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZiraatDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Altkategoriekle.resx">
+      <DependentUpon>Admin_Altkategoriekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Bildirim.resx">
+      <DependentUpon>Admin_Bildirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHesap.resx">
+      <DependentUpon>AdminHesap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Kupon.resx">
+      <DependentUpon>Admin_Kupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Kategoriekleme.resx">
+      <DependentUpon>Admin_Kategoriekleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Markaekle.resx">
+      <DependentUpon>Admin_Markaekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Kampanyalar.resx">
+      <DependentUpon>Admin_Kampanyalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deneme.resx">
+      <DependentUpon>deneme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUyeGirisi.resx">
+      <DependentUpon>FormUyeGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUyeOl.resx">
+      <DependentUpon>FormUyeOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuHakkimizda.resx">
+      <DependentUpon>MenuHakkimizda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuIetisim.resx">
+      <DependentUpon>MenuIetisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuProjeler.resx">
+      <DependentUpon>MenuProjeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Siparisler.resx">
+      <DependentUpon>Admin_Siparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_StokBilgileri.resx">
+      <DependentUpon>Admin_StokBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UrunIslemleri.resx">
+      <DependentUpon>Admin_UrunIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UyeListesi.resx">
+      <DependentUpon>Admin_UyeListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunDetaylari.resx">
+      <DependentUpon>UrunDetaylari.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ZiraatDataSet.xsc">
+      <DependentUpon>ZiraatDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZiraatDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZiraatDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZiraatDataSet.xss">
+      <DependentUpon>ZiraatDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
